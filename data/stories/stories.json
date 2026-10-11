@@ -1,0 +1,118 @@
+{
+  "stories": [
+    {
+      "story_id": "rabbit_turtle",
+      "title": "الأرنب والسلحفاة",
+      "category": "animals",
+      "age_min": 5,
+      "age_max": 10,
+      "audio": "animals/rabbit_turtle/rabbit_turtle.mp3",
+      "duration_seconds": 121,
+      "checkpoints": [
+        {
+          "at_seconds": 62,
+          "question": "برأيك مين رح يفوز بالسباق، الأرنب ولا السلحفاة؟",
+          "expected_keywords": [
+            "السلحفاة",
+            "سلحفاة"
+          ],
+          "correct_response": "اختيار حلو! خلينا نشوف إذا توقعك صح.",
+          "other_response": "ممكن! خلينا نكمل ونشوف مين رح يفوز."
+        },
+        {
+          "at_seconds": 86,
+          "question": "بتتوقع الأرنب يصحى قبل ما توصل السلحفاة؟",
+          "expected_keywords": [
+            "لا",
+            "ما بصحى",
+            "مش رح",
+            "ما رح"
+          ],
+          "correct_response": "ممتاز، خلينا نشوف شو صار.",
+          "other_response": "ممكن يصحى! يلا نكمل ونشوف."
+        }
+      ],
+      "lesson": "الاستمرار وعدم الاستسلام أهم من التفاخر."
+    },
+
+    {
+      "story_id": "adventure",
+      "title": "النملة والقمح",
+      "category": "adventure",
+      "age_min": 5,
+      "age_max": 10,
+      "audio": "adventure/adventure.mp3",
+      "duration_seconds": 166,
+      "checkpoints": [
+        {
+          "at_seconds": 102,
+          "question": "برأيك نجحت فكرة النملة؟ وكانت النملة ذكية؟",
+          "expected_keywords": [
+            "نعم",
+            "اه",
+            "آه",
+            "نجحت",
+            "ذكية",
+            "ذكيه"
+          ],
+          "correct_response": "شاطر! واضح إنك منتبه للقصة. يلا نشوف شو صار معها.",
+          "other_response": "ممكن! خلينا نكمل ونشوف إذا فكرتها نجحت."
+        }
+      ],
+      "lesson": "التفكير والتعاون بيساعدونا نحل المشاكل."
+    },
+
+    {
+      "story_id": "educational",
+      "title": "وعد الكتكوت كوك",
+      "category": "educational",
+      "age_min": 5,
+      "age_max": 10,
+      "audio": "educational/educational.mp3",
+      "duration_seconds": 122,
+      "checkpoints": [
+        {
+          "at_seconds": 40,
+          "question": "برأيك رح يلحقوا يرجعوا من اللعب قبل الساعة خمسة؟",
+          "expected_keywords": [
+            "نعم",
+            "اه",
+            "آه",
+            "بيلحقوا",
+            "رح يلحقوا",
+            "يلحقوا"
+          ],
+          "correct_response": "حلو! خلينا نكمل ونشوف إذا رح يلتزم كوك بوعده.",
+          "other_response": "ممكن ما يلحقوا! يلا نكمل ونشوف شو رح يصير."
+        }
+      ],
+      "lesson": "لما نوعد حدا، لازم نحاول نلتزم بوعدنا."
+    },
+
+    {
+      "story_id": "funny",
+      "title": "زوزو مش عايز يستحمى",
+      "category": "funny",
+      "age_min": 5,
+      "age_max": 10,
+      "audio": "funny/funny.mp3",
+      "duration_seconds": 145,
+      "checkpoints": [
+        {
+          "at_seconds": 40,
+          "question": "برأيك زوزو ولد شاطر لأنه مش عايز يستحمى؟",
+          "expected_keywords": [
+            "لا",
+            "مش شاطر",
+            "لازم يستحمى",
+            "لازم يتحمم",
+            "لازم يستحم"
+          ],
+          "correct_response": "صح! النظافة مهمة كثير. يلا نشوف شو رح يعمل زوزو.",
+          "other_response": "هههه ممكن زوزو مش حابب المي، بس خلينا نكمل ونشوف شو رح يصير."
+        }
+      ],
+      "lesson": "النظافة مهمة، والاستحمام بخلينا نظاف ونحافظ على صحتنا."
+    }
+  ]
+}

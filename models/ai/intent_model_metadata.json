@@ -1,0 +1,22 @@
+{
+  "model_type": "TF-IDF Character N-Grams + Logistic Regression",
+  "total_samples": 300,
+  "number_of_intents": 12,
+  "intents": [
+    "evening_adhkar",
+    "goodbye",
+    "greeting",
+    "help",
+    "learning",
+    "morning_adhkar",
+    "quran_memorize",
+    "quran_read",
+    "riddle",
+    "story",
+    "tasks",
+    "unknown"
+  ],
+  "test_accuracy": 0.9066666666666666,
+  "cross_validation_macro_f1": 0.8803611203611205,
+  "confidence_threshold": 0.25
+}

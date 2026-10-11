@@ -1,0 +1,745 @@
+{
+  "total_tests": 60,
+  "correct": 48,
+  "accuracy": 0.8,
+  "confidence_threshold": 0.25,
+  "classification_report": {
+    "evening_adhkar": {
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1-score": 0.5714285714285714,
+      "support": 5.0
+    },
+    "goodbye": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 5.0
+    },
+    "greeting": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "help": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 5.0
+    },
+    "learning": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1-score": 0.75,
+      "support": 5.0
+    },
+    "morning_adhkar": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1-score": 0.75,
+      "support": 5.0
+    },
+    "quran_memorize": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 5.0
+    },
+    "quran_read": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 5.0
+    },
+    "riddle": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "story": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 5.0
+    },
+    "tasks": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 5.0
+    },
+    "unknown": {
+      "precision": 0.29411764705882354,
+      "recall": 1.0,
+      "f1-score": 0.45454545454545453,
+      "support": 5.0
+    },
+    "accuracy": 0.8,
+    "macro avg": {
+      "precision": 0.9411764705882354,
+      "recall": 0.7999999999999999,
+      "f1-score": 0.8308682058682059,
+      "support": 60.0
+    },
+    "weighted avg": {
+      "precision": 0.9411764705882353,
+      "recall": 0.8,
+      "f1-score": 0.8308682058682059,
+      "support": 60.0
+    }
+  },
+  "mistakes": [
+    {
+      "number": 20,
+      "text": "ميمي بدي أسمع آيات",
+      "expected": "quran_read",
+      "predicted": "unknown",
+      "raw_intent": "greeting",
+      "confidence": 0.17597955183419856,
+      "correct": false
+    },
+    {
+      "number": 23,
+      "text": "بدي أقرأ وإنت تصححيلي",
+      "expected": "quran_memorize",
+      "predicted": "unknown",
+      "raw_intent": "quran_memorize",
+      "confidence": 0.13419057608838872,
+      "correct": false
+    },
+    {
+      "number": 28,
+      "text": "ميمي ذكّريني شو علي",
+      "expected": "tasks",
+      "predicted": "unknown",
+      "raw_intent": "tasks",
+      "confidence": 0.1918156324838575,
+      "correct": false
+    },
+    {
+      "number": 31,
+      "text": "يلا نبدأ يومنا بذكر الله",
+      "expected": "morning_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "goodbye",
+      "confidence": 0.13768181737379895,
+      "correct": false
+    },
+    {
+      "number": 35,
+      "text": "نقرأ الأذكار قبل ما أبدأ يومي",
+      "expected": "morning_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "evening_adhkar",
+      "confidence": 0.13453909297816863,
+      "correct": false
+    },
+    {
+      "number": 37,
+      "text": "ميمي شو أذكار الليل",
+      "expected": "evening_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "evening_adhkar",
+      "confidence": 0.23817778026041792,
+      "correct": false
+    },
+    {
+      "number": 39,
+      "text": "احكيلي أذكار قبل ما أنام",
+      "expected": "evening_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "story",
+      "confidence": 0.1840278490340621,
+      "correct": false
+    },
+    {
+      "number": 40,
+      "text": "نقرأ أذكارنا بالليل",
+      "expected": "evening_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "evening_adhkar",
+      "confidence": 0.22228118448099463,
+      "correct": false
+    },
+    {
+      "number": 43,
+      "text": "ميمي اشرحيلي الجمع",
+      "expected": "learning",
+      "predicted": "unknown",
+      "raw_intent": "greeting",
+      "confidence": 0.1829357266358821,
+      "correct": false
+    },
+    {
+      "number": 45,
+      "text": "بدي أعمل نشاط تعليمي",
+      "expected": "learning",
+      "predicted": "unknown",
+      "raw_intent": "learning",
+      "confidence": 0.20674246066565735,
+      "correct": false
+    },
+    {
+      "number": 46,
+      "text": "ميمي ممكن توقفي معي شوي",
+      "expected": "help",
+      "predicted": "unknown",
+      "raw_intent": "greeting",
+      "confidence": 0.17830412297264864,
+      "correct": false
+    },
+    {
+      "number": 55,
+      "text": "تصبحي على خير يا ميمي",
+      "expected": "goodbye",
+      "predicted": "unknown",
+      "raw_intent": "goodbye",
+      "confidence": 0.21488446779461368,
+      "correct": false
+    }
+  ],
+  "all_results": [
+    {
+      "number": 1,
+      "text": "صباح الورد يا ميمي",
+      "expected": "greeting",
+      "predicted": "greeting",
+      "raw_intent": "greeting",
+      "confidence": 0.33666585727608894,
+      "correct": true
+    },
+    {
+      "number": 2,
+      "text": "هلا والله ميمي",
+      "expected": "greeting",
+      "predicted": "greeting",
+      "raw_intent": "greeting",
+      "confidence": 0.3243056621911848,
+      "correct": true
+    },
+    {
+      "number": 3,
+      "text": "ميمي شو أخبارك اليوم",
+      "expected": "greeting",
+      "predicted": "greeting",
+      "raw_intent": "greeting",
+      "confidence": 0.3362369822862688,
+      "correct": true
+    },
+    {
+      "number": 4,
+      "text": "يسعد صباحك ميمي",
+      "expected": "greeting",
+      "predicted": "greeting",
+      "raw_intent": "greeting",
+      "confidence": 0.33235665081128496,
+      "correct": true
+    },
+    {
+      "number": 5,
+      "text": "مرحبتين كيف حالك",
+      "expected": "greeting",
+      "predicted": "greeting",
+      "raw_intent": "greeting",
+      "confidence": 0.42398106800880225,
+      "correct": true
+    },
+    {
+      "number": 6,
+      "text": "بدنا نسمع حكاية عن قطة",
+      "expected": "story",
+      "predicted": "story",
+      "raw_intent": "story",
+      "confidence": 0.2943144641448861,
+      "correct": true
+    },
+    {
+      "number": 7,
+      "text": "احكيلي حكاية قبل النوم",
+      "expected": "story",
+      "predicted": "story",
+      "raw_intent": "story",
+      "confidence": 0.4063517296221604,
+      "correct": true
+    },
+    {
+      "number": 8,
+      "text": "شو رأيك تحكيلنا قصة جديدة",
+      "expected": "story",
+      "predicted": "story",
+      "raw_intent": "story",
+      "confidence": 0.3643948207874286,
+      "correct": true
+    },
+    {
+      "number": 9,
+      "text": "ميمي اختاري حكاية واحكيلي ياها",
+      "expected": "story",
+      "predicted": "story",
+      "raw_intent": "story",
+      "confidence": 0.3727702150906724,
+      "correct": true
+    },
+    {
+      "number": 10,
+      "text": "نفسي اسمع قصة ممتعة",
+      "expected": "story",
+      "predicted": "story",
+      "raw_intent": "story",
+      "confidence": 0.45480298366084704,
+      "correct": true
+    },
+    {
+      "number": 11,
+      "text": "بدنا نلعب لعبة حزازير",
+      "expected": "riddle",
+      "predicted": "riddle",
+      "raw_intent": "riddle",
+      "confidence": 0.2620177190448799,
+      "correct": true
+    },
+    {
+      "number": 12,
+      "text": "ورجيني لغز أشوف إذا بعرفه",
+      "expected": "riddle",
+      "predicted": "riddle",
+      "raw_intent": "riddle",
+      "confidence": 0.34734290860259803,
+      "correct": true
+    },
+    {
+      "number": 13,
+      "text": "اعطيني حزورة أفكر فيها",
+      "expected": "riddle",
+      "predicted": "riddle",
+      "raw_intent": "riddle",
+      "confidence": 0.41489625378233225,
+      "correct": true
+    },
+    {
+      "number": 14,
+      "text": "اسأليني سؤال يحتاج تفكير",
+      "expected": "riddle",
+      "predicted": "riddle",
+      "raw_intent": "riddle",
+      "confidence": 0.27653458295034283,
+      "correct": true
+    },
+    {
+      "number": 15,
+      "text": "يلا نلعب لغز جديد",
+      "expected": "riddle",
+      "predicted": "riddle",
+      "raw_intent": "riddle",
+      "confidence": 0.4032471928771628,
+      "correct": true
+    },
+    {
+      "number": 16,
+      "text": "ممكن تسمعيني سورة الناس",
+      "expected": "quran_read",
+      "predicted": "quran_read",
+      "raw_intent": "quran_read",
+      "confidence": 0.266512836400534,
+      "correct": true
+    },
+    {
+      "number": 17,
+      "text": "نفسي اسمع شوية قرآن",
+      "expected": "quran_read",
+      "predicted": "quran_read",
+      "raw_intent": "quran_read",
+      "confidence": 0.39254013700387685,
+      "correct": true
+    },
+    {
+      "number": 18,
+      "text": "اقرأيلي سورة من القرآن",
+      "expected": "quran_read",
+      "predicted": "quran_read",
+      "raw_intent": "quran_read",
+      "confidence": 0.6531847186615968,
+      "correct": true
+    },
+    {
+      "number": 19,
+      "text": "شغلي تلاوة سورة الفلق",
+      "expected": "quran_read",
+      "predicted": "quran_read",
+      "raw_intent": "quran_read",
+      "confidence": 0.4851251465092686,
+      "correct": true
+    },
+    {
+      "number": 20,
+      "text": "ميمي بدي أسمع آيات",
+      "expected": "quran_read",
+      "predicted": "unknown",
+      "raw_intent": "greeting",
+      "confidence": 0.17597955183419856,
+      "correct": false
+    },
+    {
+      "number": 21,
+      "text": "ساعديني أحفظ أول آية",
+      "expected": "quran_memorize",
+      "predicted": "quran_memorize",
+      "raw_intent": "quran_memorize",
+      "confidence": 0.3422287958075,
+      "correct": true
+    },
+    {
+      "number": 22,
+      "text": "خلينا نراجع اللي حفظته",
+      "expected": "quran_memorize",
+      "predicted": "quran_memorize",
+      "raw_intent": "quran_memorize",
+      "confidence": 0.27113983163868033,
+      "correct": true
+    },
+    {
+      "number": 23,
+      "text": "بدي أقرأ وإنت تصححيلي",
+      "expected": "quran_memorize",
+      "predicted": "unknown",
+      "raw_intent": "quran_memorize",
+      "confidence": 0.13419057608838872,
+      "correct": false
+    },
+    {
+      "number": 24,
+      "text": "خليني أردد الآية وراك",
+      "expected": "quran_memorize",
+      "predicted": "quran_memorize",
+      "raw_intent": "quran_memorize",
+      "confidence": 0.32161646765956575,
+      "correct": true
+    },
+    {
+      "number": 25,
+      "text": "اختبريني بالسورة اللي حفظتها",
+      "expected": "quran_memorize",
+      "predicted": "quran_memorize",
+      "raw_intent": "quran_memorize",
+      "confidence": 0.27731983335400395,
+      "correct": true
+    },
+    {
+      "number": 26,
+      "text": "شو مطلوب مني أعمل هسا",
+      "expected": "tasks",
+      "predicted": "tasks",
+      "raw_intent": "tasks",
+      "confidence": 0.2555521260997896,
+      "correct": true
+    },
+    {
+      "number": 27,
+      "text": "عندي واجبات مسجلة عندك",
+      "expected": "tasks",
+      "predicted": "tasks",
+      "raw_intent": "tasks",
+      "confidence": 0.33837058747690985,
+      "correct": true
+    },
+    {
+      "number": 28,
+      "text": "ميمي ذكّريني شو علي",
+      "expected": "tasks",
+      "predicted": "unknown",
+      "raw_intent": "tasks",
+      "confidence": 0.1918156324838575,
+      "correct": false
+    },
+    {
+      "number": 29,
+      "text": "شو المهام اللي لسا ما خلصتها",
+      "expected": "tasks",
+      "predicted": "tasks",
+      "raw_intent": "tasks",
+      "confidence": 0.3232113730633637,
+      "correct": true
+    },
+    {
+      "number": 30,
+      "text": "احكيلي شو عندي لليوم",
+      "expected": "tasks",
+      "predicted": "tasks",
+      "raw_intent": "tasks",
+      "confidence": 0.4091767779423567,
+      "correct": true
+    },
+    {
+      "number": 31,
+      "text": "يلا نبدأ يومنا بذكر الله",
+      "expected": "morning_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "goodbye",
+      "confidence": 0.13768181737379895,
+      "correct": false
+    },
+    {
+      "number": 32,
+      "text": "شو بنقرأ من أذكار الصبح",
+      "expected": "morning_adhkar",
+      "predicted": "morning_adhkar",
+      "raw_intent": "morning_adhkar",
+      "confidence": 0.3672286291433711,
+      "correct": true
+    },
+    {
+      "number": 33,
+      "text": "ميمي احكي معي أذكار الصباح",
+      "expected": "morning_adhkar",
+      "predicted": "morning_adhkar",
+      "raw_intent": "morning_adhkar",
+      "confidence": 0.4577128004411291,
+      "correct": true
+    },
+    {
+      "number": 34,
+      "text": "بدي أسمع ذكر الصبح",
+      "expected": "morning_adhkar",
+      "predicted": "morning_adhkar",
+      "raw_intent": "morning_adhkar",
+      "confidence": 0.3501742927121053,
+      "correct": true
+    },
+    {
+      "number": 35,
+      "text": "نقرأ الأذكار قبل ما أبدأ يومي",
+      "expected": "morning_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "evening_adhkar",
+      "confidence": 0.13453909297816863,
+      "correct": false
+    },
+    {
+      "number": 36,
+      "text": "خلينا نختم اليوم بأذكار المساء",
+      "expected": "evening_adhkar",
+      "predicted": "evening_adhkar",
+      "raw_intent": "evening_adhkar",
+      "confidence": 0.42422915943304035,
+      "correct": true
+    },
+    {
+      "number": 37,
+      "text": "ميمي شو أذكار الليل",
+      "expected": "evening_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "evening_adhkar",
+      "confidence": 0.23817778026041792,
+      "correct": false
+    },
+    {
+      "number": 38,
+      "text": "بدي أقرأ ذكر المساء",
+      "expected": "evening_adhkar",
+      "predicted": "evening_adhkar",
+      "raw_intent": "evening_adhkar",
+      "confidence": 0.554636173325022,
+      "correct": true
+    },
+    {
+      "number": 39,
+      "text": "احكيلي أذكار قبل ما أنام",
+      "expected": "evening_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "story",
+      "confidence": 0.1840278490340621,
+      "correct": false
+    },
+    {
+      "number": 40,
+      "text": "نقرأ أذكارنا بالليل",
+      "expected": "evening_adhkar",
+      "predicted": "unknown",
+      "raw_intent": "evening_adhkar",
+      "confidence": 0.22228118448099463,
+      "correct": false
+    },
+    {
+      "number": 41,
+      "text": "علّميني أعد من واحد لعشرة",
+      "expected": "learning",
+      "predicted": "learning",
+      "raw_intent": "learning",
+      "confidence": 0.36686770312103717,
+      "correct": true
+    },
+    {
+      "number": 42,
+      "text": "بدنا نتعلم الألوان اليوم",
+      "expected": "learning",
+      "predicted": "learning",
+      "raw_intent": "learning",
+      "confidence": 0.33582576569572964,
+      "correct": true
+    },
+    {
+      "number": 43,
+      "text": "ميمي اشرحيلي الجمع",
+      "expected": "learning",
+      "predicted": "unknown",
+      "raw_intent": "greeting",
+      "confidence": 0.1829357266358821,
+      "correct": false
+    },
+    {
+      "number": 44,
+      "text": "خلينا نتعلم حرف جديد",
+      "expected": "learning",
+      "predicted": "learning",
+      "raw_intent": "learning",
+      "confidence": 0.4388869520689327,
+      "correct": true
+    },
+    {
+      "number": 45,
+      "text": "بدي أعمل نشاط تعليمي",
+      "expected": "learning",
+      "predicted": "unknown",
+      "raw_intent": "learning",
+      "confidence": 0.20674246066565735,
+      "correct": false
+    },
+    {
+      "number": 46,
+      "text": "ميمي ممكن توقفي معي شوي",
+      "expected": "help",
+      "predicted": "unknown",
+      "raw_intent": "greeting",
+      "confidence": 0.17830412297264864,
+      "correct": false
+    },
+    {
+      "number": 47,
+      "text": "مش فاهم هاد الاشي ساعديني",
+      "expected": "help",
+      "predicted": "help",
+      "raw_intent": "help",
+      "confidence": 0.41415688603551637,
+      "correct": true
+    },
+    {
+      "number": 48,
+      "text": "محتاج مساعدتك يا ميمي",
+      "expected": "help",
+      "predicted": "help",
+      "raw_intent": "help",
+      "confidence": 0.5075498666406206,
+      "correct": true
+    },
+    {
+      "number": 49,
+      "text": "ساعديني أعرف شو أعمل",
+      "expected": "help",
+      "predicted": "help",
+      "raw_intent": "help",
+      "confidence": 0.5864729696478116,
+      "correct": true
+    },
+    {
+      "number": 50,
+      "text": "ميمي بدي منك تساعديني",
+      "expected": "help",
+      "predicted": "help",
+      "raw_intent": "help",
+      "confidence": 0.4943496421888242,
+      "correct": true
+    },
+    {
+      "number": 51,
+      "text": "يلا أنا ماشي بشوفك بعدين",
+      "expected": "goodbye",
+      "predicted": "goodbye",
+      "raw_intent": "goodbye",
+      "confidence": 0.34452176767527787,
+      "correct": true
+    },
+    {
+      "number": 52,
+      "text": "شكرا ميمي نشوفك بكرا",
+      "expected": "goodbye",
+      "predicted": "goodbye",
+      "raw_intent": "goodbye",
+      "confidence": 0.4111606626215065,
+      "correct": true
+    },
+    {
+      "number": 53,
+      "text": "خلص بكفي لليوم سلام",
+      "expected": "goodbye",
+      "predicted": "goodbye",
+      "raw_intent": "goodbye",
+      "confidence": 0.42175111214336863,
+      "correct": true
+    },
+    {
+      "number": 54,
+      "text": "أنا رايحة هسا باي",
+      "expected": "goodbye",
+      "predicted": "goodbye",
+      "raw_intent": "goodbye",
+      "confidence": 0.39339990793468144,
+      "correct": true
+    },
+    {
+      "number": 55,
+      "text": "تصبحي على خير يا ميمي",
+      "expected": "goodbye",
+      "predicted": "unknown",
+      "raw_intent": "goodbye",
+      "confidence": 0.21488446779461368,
+      "correct": false
+    },
+    {
+      "number": 56,
+      "text": "اليوم أكلت رز ودجاج",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "raw_intent": "unknown",
+      "confidence": 0.2386904577515659,
+      "correct": true
+    },
+    {
+      "number": 57,
+      "text": "عندي كرة لونها أحمر",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "raw_intent": "unknown",
+      "confidence": 0.22930357408716498,
+      "correct": true
+    },
+    {
+      "number": 58,
+      "text": "أختي راحت تزور ستي",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "raw_intent": "unknown",
+      "confidence": 0.14181503063700804,
+      "correct": true
+    },
+    {
+      "number": 59,
+      "text": "أنا بحب فصل الشتاء",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "raw_intent": "unknown",
+      "confidence": 0.36717069814366565,
+      "correct": true
+    },
+    {
+      "number": 60,
+      "text": "اليوم المدرسة كانت حلوة",
+      "expected": "unknown",
+      "predicted": "unknown",
+      "raw_intent": "unknown",
+      "confidence": 0.3307081719395945,
+      "correct": true
+    }
+  ]
+}
